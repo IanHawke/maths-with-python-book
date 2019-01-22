@@ -425,7 +425,7 @@ pyplot.show();
 
 Here we see the *Central Limit Theorem* in action: the distribution of the means appears to be normal, despite the distribution of any individual trial coming from the Beta distribution, which looks very different.
 
-# Exercise: Anscombe's quartet
+## Exercise: Anscombe's quartet
 
 Four separate datasets are given:
 
@@ -443,14 +443,14 @@ Four separate datasets are given:
 | 7.0  | 4.82  | 7.0  | 7.26 | 7.0  | 6.42  | 8.0  | 7.91  |
 | 5.0  | 5.68  | 5.0  | 4.74 | 5.0  | 5.73  | 8.0  | 6.89  |
 
-## Exercise 1
+### Exercise 1
 
 Using standard `numpy` operations, show that each dataset has the same mean and standard deviation, to two decimal places.
 
-## Exercise 2
+### Exercise 2
 
 Using the standard `scipy` function, compute the linear regression of each data set and show that the slope and correlation coefficient match to two decimal places.
 
-## Exercise 3
+### Exercise 3
 
 Plot each dataset. Add the best fit line. Then look at the description of [Anscombe's quartet](https://en.wikipedia.org/wiki/Anscombe%27s_quartet), and consider in what order the operations in this exercise *should* have been done.

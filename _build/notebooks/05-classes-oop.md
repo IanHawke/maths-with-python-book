@@ -312,13 +312,13 @@ print(r.display())
 
 We now have a simple class that can represent polynomials and multiply them together, whilst printing out a simple string form representing itself. This can obviously be extended to be much more useful.
 
-# Exercise: Equivalence classes
+## Exercise: Equivalence classes
 
 An *equivalence class* is a relation that groups objects in a set into related subsets. For example, if we think of the integers modulo $7$, then $1$ is in the same equivalence class as $8$ (and $15$, and $22$, and so on), and $3$ is in the same equivalence class as $10$. We use the tilde $3 \sim 10$ to denote two objects within the same equivalence class.
 
 Here, we are going to define the positive integers programmatically from equivalent sequences.
 
-## Exercise 1
+### Exercise 1
 
 Define a Python class `Eqint`. This should be
 
@@ -327,7 +327,7 @@ Define a Python class `Eqint`. This should be
 3. Have a `display` method that returns a string showing the integer length of the sequence;
 4. Have an `equals` method that checks if two `Eqint`s are equal, which is `True` if, and only if, their sequences have the same length.
 
-## Exercise 2
+### Exercise 2
 
 Define a `zero` object from the empty list, and three `one` objects, from a single object list, tuple, and string. For example
 
@@ -339,7 +339,7 @@ one_string = Eqint('1')
 
 Check that none of the `one` objects equal the zero object, but all equal the other `one` objects. Display each object to check that the representation gives the integer length.
 
-## Exercise 3
+### Exercise 3
 
 Redefine the class by including an `add` method that combines the two sequences. That is, if `a` and `b` are `Eqint`s then `a.add(b)` should return an `Eqint` defined from combining `a` and `b`s sequences.
 
@@ -347,11 +347,11 @@ Redefine the class by including an `add` method that combines the two sequences.
 
 Adding two different *types* of sequences (eg, a list to a tuple) does not work, so it is better to either iterate over the sequences, or to convert to a uniform type before adding.
 
-## Exercise 4
+### Exercise 4
 
 Check your addition function by adding together all your previous `Eqint` objects (which will need re-defining, as the class has been redefined). Display the resulting object to check you get `3`, and also print its internal sequence.
 
-## Exercise 5
+### Exercise 5
 
 We will sketch a construction of the positive integers from *nothing*.
 

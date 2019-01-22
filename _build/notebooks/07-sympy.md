@@ -853,7 +853,7 @@ The accuracy is around $10^{-8}$ everywhere - by modifying the accuracy of the `
 
 `sympy` has [detailed documentation](http://docs.sympy.org/latest/index.html) and a [useful tutorial](http://docs.sympy.org/dev/tutorial/index.html).
 
-# Exercise : systematic ODE solving
+## Exercise : systematic ODE solving
 
 We are interested in the solution of
 
@@ -861,14 +861,14 @@ $$  \frac{\text{d} y}{\text{d} t} = e^{-t} - y^n, \qquad y(0) = 1, $$
 
 where $n > 1$ is an integer. The "minor" change from the above examples mean that `sympy` can only give the solution as a power series.
 
-## Exercise 1
+### Exercise 1
 
 Compute the general solution as a power series for $n = 2$.
 
-## Exercise 2
+### Exercise 2
 
 Investigate the help for the `dsolve` function to straightforwardly impose the initial condition $y(0) = 1$ using the `ics` argument. Using this, compute the specific solutions that satisfy the ODE for $n = 2, \dots, 10$.
 
-## Exercise 3
+### Exercise 3
 
 Using the `removeO` command, plot each of these solutions for $t \in [0, 1]$.

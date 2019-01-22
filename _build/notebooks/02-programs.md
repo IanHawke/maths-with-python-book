@@ -913,9 +913,9 @@ This function uses our own function to convert from degrees to radians. To save 
 
 This program, when run, will print to the screen the angles $(n \pi)/ 12$ for $n = 1, 2, \dots, 6$.
 
-# Exercise: basic functions
+## Exercise: basic functions
 
-## Exercise 1
+### Exercise 1
 
 Write a function to calculate the volume of a cuboid with edge lengths $a, b, c$. Test your code on sample values such as
 
@@ -924,7 +924,7 @@ Write a function to calculate the volume of a cuboid with edge lengths $a, b, c$
 3. $a=0, b=1, c=1$ (result should be $0$);
 4. $a=2, b=-1, c=1$ (what do you think the result should be?).
 
-## Exercise 2
+### Exercise 2
 
 Write a function to compute the time (in seconds) taken for an object to fall from a height $H$ (in metres) to the ground, using the formula
 
@@ -937,7 +937,7 @@ Use the value of the acceleration due to gravity $g$ from `scipy.constants.g`. T
 3. $H = 0$m (result should be $0$s);
 4. $H = -1$m (what do you think the result should be?).
 
-## Exercise 3
+### Exercise 3
 
 Write a function that computes the area of a triangle with edge lengths $a, b, c$. You may use the formula
 
@@ -945,9 +945,9 @@ $$A = \sqrt{s (s - a) (s - b) (s - c)}, \qquad s = \frac{a + b + c}{2}.$$
 
 Construct your own test cases to cover a range of possibilities.
 
-# Exercise: Floating point numbers
+## Exercise: Floating point numbers
 
-## Exercise 1
+### Exercise 1
 
 Computers cannot, in principle, represent real numbers perfectly. This can lead to problems of accuracy. For example, if
 
@@ -963,7 +963,7 @@ Check how accurately this equation holds in Python and see what this implies abo
 
 The standard floating point number holds the first 16 significant digits of a real.
 
-## Exercise 2
+### Exercise 2
 
 ##### Note: no coding required
 
@@ -987,7 +987,7 @@ show that
 
 $$  x \simeq -10^{2 n} + 10^{-2 n} \quad \text{and} \quad -10^{-2n}, \qquad n \gg 1. $$
 
-## Exercise 3
+### Exercise 3
 
 ##### Note: no coding required
 
@@ -995,8 +995,7 @@ By multiplying and dividing by $-b \mp \sqrt{b^2 - 4 a c}$, check that we can al
 
 $$   x = \frac{2 c}{-b \mp \sqrt{b^2 - 4 a c}}. $$
 
-
-## Exercise 4
+### Exercise 4
 
 Using Python, calculate both solutions to the quadratic equation
 
@@ -1004,7 +1003,7 @@ $$   10^{-n} x^2 + 10^n x + 10^{-n} = 0 $$
 
 for $n = 3$ and $n = 4$ using both formulas. What do you see? How has floating point accuracy caused problems here?
 
-## Exercise 5
+### Exercise 5
 
 The standard definition of the derivative of a function is
 
@@ -1016,6 +1015,6 @@ $$ g(x, \delta) = \frac{f(x + \delta) - f(x)}{\delta}. $$
 
 Write a function that takes as inputs a function of one variable, $f(x)$, a location $X$, and a step length $\delta$, and returns the approximation to the derivative given by $g$.
 
-## Exercise 6
+### Exercise 6
 
 The function $f_1(x) = e^x$ has derivative with the exact value $1$ at $x=0$. Compute the approximate derivative using your function above, for $\delta = 10^{-2 n}$ with $n = 1, \dots, 7$. You should see the results initially improve, then get worse. Why is this?

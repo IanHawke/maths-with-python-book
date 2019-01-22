@@ -367,7 +367,7 @@ Most modern programming languages include some object oriented features. Many (i
 
 are the essential steps that are common across nearly all.
 
-# Exercise: Equivalence classes
+## Exercise: Equivalence classes
 
 This exercise repeats that from the earlier chapter on classes, but explicitly includes new class methods to make equivalence classes easier to work with.
 
@@ -375,7 +375,7 @@ An *equivalence class* is a relation that groups objects in a set into related s
 
 Here, we are going to define the positive integers programmatically from equivalent sequences.
 
-## Exercise 1
+### Exercise 1
 
 Define a Python class `Eqint`. This should be
 
@@ -384,7 +384,7 @@ Define a Python class `Eqint`. This should be
 3. Define its representation (via the `__repr__` function) to be the integer length of the sequence;
 4. Redefine equality (via the `__eq__` function) so that two `Eqint`s are equal if their sequences have the same length.
 
-## Exercise 2
+### Exercise 2
 
 Define a `zero` object from the empty list, and three `one` objects, from a single object list, tuple, and string. For example
 
@@ -396,7 +396,7 @@ one_string = Eqint('1')
 
 Check that none of the `one` objects equal the zero object, but all equal the other `one` objects. Print each object to check that the representation gives the integer length.
 
-## Exercise 3
+### Exercise 3
 
 Redefine the class by including an `__add__` method that combines the two sequences. That is, if `a` and `b` are `Eqint`s then `a+b` should return an `Eqint` defined from combining `a` and `b`s sequences.
 
@@ -404,11 +404,11 @@ Redefine the class by including an `__add__` method that combines the two sequen
 
 Adding two different *types* of sequences (eg, a list to a tuple) does not work, so it is better to either iterate over the sequences, or to convert to a uniform type before adding.
 
-## Exercise 4
+### Exercise 4
 
 Check your addition function by adding together all your previous `Eqint` objects (which will need re-defining, as the class has been redefined). Print the resulting object to check you get `3`, and also print its internal sequence.
 
-## Exercise 5
+### Exercise 5
 
 We will sketch a construction of the positive integers from *nothing*.
 
@@ -419,39 +419,39 @@ We will sketch a construction of the positive integers from *nothing*.
 
 Use this procedure to define the `Eqint` equivalent to $10$. Print it, and its internal sequence, to check.
 
-# Exercise: Rational numbers
+## Exercise: Rational numbers
 
 Instead of working with floating point numbers, which are not "exact", we could work with the rational numbers $\mathbb{Q}$. A rational number $q \in \mathbb{Q}$ is defined by the *numerator* $n$ and *denominator* $d$ as $q = \frac{n}{d}$, where $n$ and $d$ are *coprime* (ie, have no common divisor other than $1$).
 
-## Exercise 1
+### Exercise 1
 
 Find a Python function that finds the greatest common divisor (`gcd`) of two numbers. Use this to write a function `normal_form` that takes a numerator and divisor and returns the coprime $n$ and $d$. Test this function on $q = \frac{3}{2}$, $q = \frac{15}{3}$, and $q = \frac{20}{42}$.
 
-## Exercise 2
+### Exercise 2
 
 Define a class `Rational` that uses the `normal_form` function to store the rational number in the appropriate form. Define a `__repr__` function that prints a string that *looks like* $\frac{n}{d}$ (**hint**: use `len(str(number))` to find the number of digits of an integer, and use `\n` to start a new line). Test it on the cases above.
 
-## Exercise 3
+### Exercise 3
 
 Overload the `__add__` function so that you can add two rational numbers. Test it on $\frac{1}{2} + \frac{1}{3} + \frac{1}{6} = 1$.
 
-## Exercise 4
+### Exercise 4
 
 Overload the `__mul__` function so that you can multiply two rational numbers. Test it on $\frac{1}{3} \times \frac{15}{2} \times \frac{2}{5} = 1$.
 
-## Exercise 5
+### Exercise 5
 
 Overload the [`__rmul__`](https://docs.python.org/2/reference/datamodel.html?highlight=rmul#object.__rmul__) function so that you can multiply a rational by an *integer*. Check that $\frac{1}{2} \times 2 = 1$ and $\frac{1}{2} + (-1) \times \frac{1}{2} = 0$. Also overload the `__sub__` function (using previous functions!) so that you can subtract rational numbers and check that $\frac{1}{2} - \frac{1}{2} = 0$.
 
-## Exercise 6
+### Exercise 6
 
 Overload the `__float__` function so that `float(q)` returns the floating point approximation to the rational number `q`. Test this on $\frac{1}{2}, \frac{1}{3}$, and $\frac{1}{11}$.
 
-## Exercise 7
+### Exercise 7
 
 Overload the `__lt__` function to compare two rational numbers. Create a list of rational numbers where the denominator is $n = 2, \dots, 11$ and the numerator is the floored integer $n/2$, ie `n//2`. Use the `sorted` function on that list (which relies on the `__lt__` function).
 
-## Exercise 8
+### Exercise 8
 
 The [Wallis formula for π](http://mathworld.wolfram.com/WallisFormula.html) is
 

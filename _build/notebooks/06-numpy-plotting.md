@@ -966,7 +966,7 @@ ax.set_ylim(-1.1, 1.1);
 
 Earlier we introduced `scipy` for Linear Algebra, and gave links there. Most of those links cover the full `scipy` package. The [scipy documentation](http://docs.scipy.org/doc/scipy/reference/) is comprehensive. Johansson [also has a tutorial on scipy](http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-3-Scipy.ipynb).
 
-# Exercise: Lorenz attractor
+## Exercise: Lorenz attractor
 
 The Lorenz system is a set of ordinary differential equations which can be written
 
@@ -982,17 +982,17 @@ $$  \vec{f} = \begin{pmatrix} \sigma \left( y(t) - x(t) \right) \\ x(t) \left( \
 
 The parameters $\sigma, \rho, \beta$ are all real numbers.
 
-## Exercise 1
+### Exercise 1
 
 Write a function `dvdt(v, t, params)` that returns $\vec{f}$ given $\vec{v}, t$ and the parameters $\sigma, \rho, \beta$.
 
-## Exercise 2
+### Exercise 2
 
 Fix $\sigma=10, \beta=8/3$. Set initial data to be $\vec{v}(0) = \vec{1}$. Using `scipy`, specifically the `odeint` function of `scipy.integrate`, solve the Lorenz system up to $t=100$ for $\rho=13, 14, 15$ and $28$.
 
 Plot your results in 3d, plotting $x, y, z$.
 
-## Exercise 3
+### Exercise 3
 
 Fix $\rho = 28$. Solve the Lorenz system twice, up to $t=40$, using the two different initial conditions $\vec{v}(0) = \vec{1}$ and $\vec{v}(0) = \vec{1} + \vec{10^{-5}}$.
 
@@ -1000,7 +1000,7 @@ Show four plots. Each plot should show the two solutions on the same axes, plott
 
 This shows the *sensitive dependence on initial conditions* that is characteristic of chaotic behaviour.
 
-# Exercise: Mandelbrot
+## Exercise: Mandelbrot
 
 The Mandelbrot set is also generated from a sequence, $\{ z_n \}$, using the relation
 
@@ -1010,34 +1010,34 @@ The members of the sequence, and the constant $c$, are all complex. The point in
 
 **Note**: the Python notation for a complex number $x + \text{i} y$ is `x + yj`: that is, `j` is used to indicate $\sqrt{-1}$. If you know the values of `x` and `y` then `x + yj` constructs a complex number; if they are stored in variables you can use `complex(x, y)`.
 
-## Exercise 1
+### Exercise 1
 
 Write a function that checks if the point $c$ is in the Mandelbrot set.
 
-## Exercise 2
+### Exercise 2
 
 Check the points $c=0$ and $c=\pm 2 \pm 2 \text{i}$ and ensure they do what you expect. (What *should* you expect?)
 
-## Exercise 3
+### Exercise 3
 
 Write a function that, given $N$
 
 1. generates an $N \times N$ grid spanning $c = x + \text{i} y$, for $-2 \le x \le 2$ and $-2 \le y \le 2$;
 2. returns an $N\times N$ array containing one if the associated grid point is in the Mandelbrot set, and zero otherwise.
 
-## Exercise 4
+### Exercise 4
 
 Using the function `imshow` from `matplotlib`, plot the resulting array for a $100 \times 100$ array to make sure you see the expected shape.
 
-## Exercise 5
+### Exercise 5
 
 Modify your functions so that, instead of returning whether a point is inside the set or not, it returns the logarithm of the number of iterations it takes. Plot the result using `imshow` again.
 
-## Exercise 6
+### Exercise 6
 
 Try some higher resolution plots, and try plotting only a section to see the structure. **Note** this is not a good way to get high accuracy close up images!
 
-# Exercise: The shortest published Mathematical paper
+## Exercise: The shortest published Mathematical paper
 
 A [candidate for the shortest mathematical paper ever](http://www.ams.org/journals/bull/1966-72-06/S0002-9904-1966-11654-3/S0002-9904-1966-11654-3.pdf) shows the following result:
 
@@ -1047,11 +1047,11 @@ This is interesting as
 
 > This is a counterexample to a conjecture by Euler ... that at least $n$ $n$th powers are required to sum to an $n$th power, $n > 2$.
 
-## Exercise 1
+### Exercise 1
 
 Using Python, check the equation above is true.
 
-## Exercise 2
+### Exercise 2
 
 The more interesting statement in the paper is that
 
@@ -1075,7 +1075,7 @@ Show, by getting Python to compute the number of combinations $N = \begin{pmatri
 
 You may find the `combinations` function from the `itertools` package useful.
 
-## Exercise 3
+### Exercise 3
 
 With 17 million combinations to work with, we'll need to be a little careful how we compute. To check the interesting statement in the paper,
 

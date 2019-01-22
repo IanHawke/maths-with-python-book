@@ -437,31 +437,31 @@ The prime 83 is 4 * 21 - 1.
 
 ```
 
-# Exercise : twin primes
+## Exercise : twin primes
 
 A *twin prime* is a pair $(p_1, p_2)$ such that both $p_1$ and $p_2$ are prime and $p_2 = p_1 + 2$.
 
-## Exercise 1
+### Exercise 1
 
 Write a generator that returns twin primes. You can use the generators above, and may want to look at the [itertools](https://docs.python.org/3/library/itertools.html) module together with [its recipes](https://docs.python.org/3/library/itertools.html#itertools-recipes), particularly the `pairwise` recipe.
 
-## Exercise 2
+### Exercise 2
 
 Find how many twin primes there are with $p_2 < 1000$.
 
-## Exercise 3
+### Exercise 3
 
 Let $\pi_N$ be the number of twin primes such that $p_2 < N$. Plot how $\pi_N / N$ varies with $N$ for $N=2^k$ and $k = 4, 5, \dots 16$. (You should use a logarithmic scale where appropriate!)
 
-# Exercise : a basis for the polynomials
+## Exercise : a basis for the polynomials
 
 In the section on classes we defined a `Monomial` class to represent a polynomial with leading coefficient $1$. As the $N+1$ monomials $1, x, x^2, \dots, x^N$ form a basis for the vector space of polynomials of order $N$, $\mathbb{P}^N$, we can use the `Monomial` class to return this basis.
 
-## Exercise 1
+### Exercise 1
 
 Define a generator that will iterate through this basis of $\mathbb{P}^N$ and test it on $\mathbb{P}^3$.
 
-## Exercise 2
+### Exercise 2
 
 An alternative basis is given by the monomials
 
@@ -469,6 +469,6 @@ $$ \begin{aligned}  p_0(x) &= 1, \\ p_1(x) &= 1-x, \\ p_2(x) &= (1-x)(2-x), \\ \
 
 Define a generator that will iterate through this basis of $\mathbb{P}^N$ and test it on $\mathbb{P}^4$.
 
-## Exercise 3
+### Exercise 3
 
 Use these generators to write another generator that produces a basis of $\mathbb{P}^3 \times \mathbb{P}^4$.

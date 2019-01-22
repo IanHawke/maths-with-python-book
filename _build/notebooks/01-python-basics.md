@@ -1057,17 +1057,17 @@ An `OverflowError` is when the number gets too large to be represented as a floa
 
 Having read the error message, find the line in your code that it indicates. If the error is clear, then fix it. If not, try splitting the line into multiple simpler commands and see where the problem lies. If using spyder, enter the commands into the editor and see if the syntax highlighting helps spot errors.
 
-# Exercise: Variables and assignment
+## Exercise: Variables and assignment
 
-## Exercise 1
+### Exercise 1
 
 Remember that $n! = n \times (n - 1) \times \dots \times 2 \times 1$. Compute $15!$, assigning the result to a sensible variable name.
 
-## Exercise 2
+### Exercise 2
 
 Using the `math` module, check your result for $15$ factorial. You should explore the help for the `math` library and its functions, using eg tab-completion, the spyder inspector, or online sources.
 
-## Exercise 3
+### Exercise 3
 
 [Stirling's approximation](http://mathworld.wolfram.com/StirlingsApproximation.html) gives that, for large enough $n$, 
 

@@ -158,7 +158,7 @@ pyplot.show()
 
 We will look at more complex plots later, but the [matplotlib documentation](http://matplotlib.org/api/pyplot_summary.html) contains a lot of details, and the [gallery](http://matplotlib.org/gallery.html) contains a lot of examples that can be adapted to fit. There is also an [extremely useful document](http://nbviewer.ipython.org/github/jrjohansson/scientific-python-lectures/blob/master/Lecture-4-Matplotlib.ipynb) as part of [Johansson's lectures on scientific Python](https://github.com/jrjohansson/scientific-python-lectures), and an [introduction by Nicolas Rougier](http://www.labri.fr/perso/nrougier/teaching/matplotlib/matplotlib.html).
 
-# Exercise: Logistic map
+## Exercise: Logistic map
 
 The logistic map builds a sequence of numbers $\{ x_n \}$ using the relation
 
@@ -166,21 +166,21 @@ $$ x_{n+1} = r x_n \left( 1 - x_n \right), $$
 
 where $0 \le x_0 \le 1$.
 
-## Exercise 1
+### Exercise 1
 
 Write a program that calculates the first $N$ members of the sequence, given as input $x_0$ and $r$ (and, of course, $N$).
 
-## Exercise 2
+### Exercise 2
 
 Fix $x_0=0.5$. Calculate the first 2,000 members of the sequence for $r=1.5$ and $r=3.5$. Plot the last 100 members of the sequence in both cases.
 
 What does this suggest about the long-term behaviour of the sequence?
 
-## Exercise 3
+### Exercise 3
 
 Fix $x_0 = 0.5$. For each value of $r$ between $1$ and $4$, in steps of $0.01$, calculate the first 2,000 members of the sequence. Plot the last 1,000 members of the sequence on a plot where the $x$-axis is the value of $r$ and the $y$-axis is the values in the sequence. Do not plot lines - just plot markers (e.g., use the `'k.'` plotting style).
 
-## Exercise 4
+### Exercise 4
 
 For iterative maps such as the logistic map, one of three things can occur:
 

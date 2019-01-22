@@ -1101,23 +1101,23 @@ To fix this bug, the simplest thing to do is to ensure that `limit` has the valu
 
 You should experiment with adding breakpoints and stepping through some of your own codes. In particular, you should note that "Run"ning the current line of code will skip over any function calls, including calls to functions you have yourself defined. If you want to follow the code as it executes functions, you need to use the "Step into" button instead.
 
-# Exercise: Prime numbers
+## Exercise: Prime numbers
 
-## Exercise 1
+### Exercise 1
 
 Write a function that tests if a number is prime. Test it by writing out all prime numbers less than 50.
 
 **Hint**: if `b` divides `a` then `a % b == 0` is `True`.
 
-## Exercise 2
+### Exercise 2
 
 500 years ago some believed that the number $2^n - 1$ was prime for *all* primes $n$. Use your function to find the first prime $n$ for which this is not true.
 
-## Exercise 3
+### Exercise 3
 
 The *Mersenne* primes are those that have the form $2^n-1$, where $n$ is prime. Use your previous solutions to generate all the $n < 40$ that give Mersenne primes.
 
-## Exercise 4
+### Exercise 4
 
 Write a function to compute all prime factors of an integer $n$, including their multiplicities. Test it by printing the prime factors (without multiplicities) of $n = 17, \dots, 20$ and the multiplicities (without factors) of $n = 48$.
 
@@ -1125,7 +1125,7 @@ Write a function to compute all prime factors of an integer $n$, including their
 
 One effective solution is to return a *dictionary*, where the keys are the factors and the values are the multiplicities.
 
-## Exercise 5
+### Exercise 5
 
 Write a function to generate all the integer divisors, including 1, but not including $n$ itself, of an integer $n$. Test it on $n = 16, \dots, 20$.
 
@@ -1133,15 +1133,15 @@ Write a function to generate all the integer divisors, including 1, but not incl
 
 You could use the prime factorization from the previous exercise, or you could do it directly.
 
-## Exercise 6
+### Exercise 6
 
 A *perfect* number $n$ is one where the divisors sum to $n$. For example, 6 has divisors 1, 2, and 3, which sum to 6. Use your previous solution to find all perfect numbers $n < 10,000$ (there are only four!).
 
-## Exercise 7
+### Exercise 7
 
 Using your previous functions, check that all perfect numbers $n < 10,000$ can be written as $2^{k-1} \times (2^k - 1)$, where $2^k-1$ is a Mersenne prime.
 
-## Exercise 8 (bonus)
+### Exercise 8 (bonus)
 
 Investigate the `timeit` function in Python or IPython. Use this to measure how long your function takes to check that, if $k$ on the Mersenne list then $n = 2^{k-1} \times (2^k - 1)$ is a perfect number, using your functions. Stop increasing $k$ when the time takes too long!
 
