@@ -1,6 +1,6 @@
 ---
 redirect_from:
-  - "exercises"
+  - "/exercises"
 interact_link: content/Exercises.ipynb
 title: 'Exercises'
 prev_page:

@@ -15,72 +15,72 @@
 #   in the sidebar. All other values are ignored.
 
 - title: Maths with Python
-  url: index
+  url: /index
   not_numbered: true
 - title: Search
   search: true
 
 - title: First steps
-  url: 00-first-steps
+  url: /00-first-steps
   not_numbered: false
   expand_sections: true
 
 - title: Python basics
-  url: 01-python-basics
+  url: /01-python-basics
   not_numbered: false
   expand_sections: true
 
 - title: Programs
-  url: 02-programs
+  url: /02-programs
   not_numbered: false
   expand_sections: true
 
 - title: Loops - how to repeat yourself
-  url: 03-loops-control-flow
+  url: /03-loops-control-flow
   not_numbered: false
   expand_sections: true
 
 - title: Basic plotting
-  url: 04-basic-plotting
+  url: /04-basic-plotting
   not_numbered: false
   expand_sections: true
 
 - title: Classes and objects
-  url: 05-classes-oop
+  url: /05-classes-oop
   not_numbered: false
   expand_sections: true
 
 - title: Scientific Python
-  url: 06-numpy-plotting
+  url: /06-numpy-plotting
   not_numbered: false
   expand_sections: true
 
 - title: Symbolic Python
-  url: 07-sympy
+  url: /07-sympy
   not_numbered: false
   expand_sections: true
 
 - title: Statistics
-  url: 08-statistics
+  url: /08-statistics
   not_numbered: false
   expand_sections: true
 
 - title: Exceptions and testing
-  url: 09-exceptions-testing
+  url: /09-exceptions-testing
   not_numbered: false
   expand_sections: true
 
 - title: Iterators and Generators
-  url: 10-generators
+  url: /10-generators
   not_numbered: false
   expand_sections: true
 
 - title: Classes and OOP
-  url: 11-more-classes
+  url: /11-more-classes
   not_numbered: false
   expand_sections: true
 
 - title: Exercises
-  url: Exercises
+  url: /Exercises
   not_numbered: false
   expand_sections: true
