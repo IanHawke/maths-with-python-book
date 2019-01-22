@@ -1,6 +1,6 @@
 # <img src="content/images/logo/logo.png" width=40 /> Jupyter Book
 
-This is the [Maths with Python book](https://github.com/IanHawke/maths-with-python) reproduced using the [Jupyter book](https://github.com/choldgraf/jupyter-book/) project.
+This is the [Maths with Python book](https://github.com/IanHawke/maths-with-python) reproduced using the [Jupyter book](https://github.com/jupyter/jupyter-book) project.
 
 ## Acknowledgements
 
