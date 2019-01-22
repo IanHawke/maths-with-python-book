@@ -24,13 +24,6 @@ from matplotlib import pyplot
 
 
 
-{:.input_area}
-```python
-%matplotlib inline
-from matplotlib import rcParams
-rcParams['figure.figsize']=(12,9)
-```
-
 
 
 
