@@ -1073,4 +1073,4 @@ Using the `math` module, check your result for $15$ factorial. You should explor
 
 $$  n! \simeq S = \sqrt{2 \pi} n^{n + 1/2} e^{-n}. $$
 
-Using functions and constants from the `math` library, compare the results of $n!$ and Stirling's approximation for $n = 5, 10, 15, 20$. In what sense does the approximation improve (investigate the absolute error $|n! - S|$ and the relative error $|n! - S| / n!$)?
+Using functions and constants from the `math` library, compare the results of $n!$ and Stirling's approximation for $n = 5, 10, 15, 20$. In what sense does the approximation improve (investigate the absolute error $\|n! - S\|$ and the relative error $\|n! - S\| / n!$)?
