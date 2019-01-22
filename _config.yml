@@ -22,8 +22,8 @@ email: I.Hawke@soton.ac.uk
 description: >- # this means to ignore newlines until "baseurl:"
   This is material for an introductory Python course for first year undergraduate Mathematics students at the University of Southampton.
 
-baseurl: "" # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
-url: "https://github.com/IanHawke/maths-with-python-book" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/maths-with-python-book" # the subpath of your site, e.g. /blog. If there is no subpath for your site, use an empty string ""
+url: "https://github.com/IanHawke" # the base hostname & protocol for your site, e.g. http://example.com
 
 
 #######################################################################################
