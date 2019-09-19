@@ -3,7 +3,7 @@
 help:
 	@echo "Please use 'make <target>' where <target> is one of:"
 	@echo "  install     to install the necessary dependencies for jupyter-book to build"
-	@echo "  book        to convert the `content/` folder into Jekyll markdown in `_build/`"
+	@echo "  book        to convert the content/ folder into Jekyll markdown in _build/"
 	@echo "  clean       to clean out site build files"
 	@echo "  runall      to run all notebooks in-place, capturing outputs with the notebook"
 	@echo "  serve       to serve the repository locally with Jekyll"
@@ -11,15 +11,17 @@ help:
 
 
 install:
-	gem install bundler
+	# Check to see whether bundler is already installed. If not, install it.
+	if [ hash bundler 2>/dev/null ]; then \
+	gem install bundler;\
+	fi
 	bundle install
-	
+
 book:
-	python scripts/license.py --path ./content
-	python scripts/generate_book.py
+	jupyter-book build ./
 
 runall:
-	python scripts/execute_all_notebooks.py
+	jupyter-book run ./content
 
 clean:
 	python scripts/clean.py
@@ -29,6 +31,4 @@ serve:
 
 build:
 	bundle exec jekyll build
-
-test:
-	pytest scripts/tests/test_build.py
+	touch _site/.nojekyll
